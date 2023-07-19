@@ -11,9 +11,9 @@
       >
       <img src="../../../../assets/images/lupa.png" alt="Lupa azul">
     </div>
-    <h2 class="ff-inter">Meu mural</h2>
+    <h2 class="ff-inter">{{ titulo }}</h2>
     <div class="botoes">
-      <button class="botao">Meu Mural</button>
+      <button class="botao" (click)="recarregar()">Meu Mural</button>
       <button class="botao" (click)="listarFavoritos()">Meu Favoritos</button>
       <button routerLink="/criarPensamento" class="botao">Novo pensamento</button>
     </div>
