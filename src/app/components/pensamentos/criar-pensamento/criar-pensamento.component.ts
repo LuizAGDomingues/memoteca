@@ -22,7 +22,8 @@ export class CriarPensamentoComponent implements OnInit {
     this.formulario = this.formBuilder.group({
       conteudo: ['Formaulario reativo', Validators.compose([Validators.required, Validators.pattern(/(.|\s)*\S(.|\s)*/)])],
       autoria: ['angular', Validators.compose([Validators.required, Validators.minLength(3)])],
-      modelo: ['modelo1']
+      modelo: ['modelo1'],
+      favorito: [false]
     })
   }
 
